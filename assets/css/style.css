@@ -2592,26 +2592,31 @@ input.button.smaller {
   left: 48%;
   bottom: 15px; }
 
-.quote-bubbles .quote .bubble {
-  background: url(../quote-nipple.png) no-repeat bottom left;
-  padding-bottom: 10px; }
-.quote-bubbles .quote .inner {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  line-height: 1.5;
-  font-size: 1em; }
-.quote-bubbles .quote a h4 {
-  text-decoration: underline; }
-.quote-bubbles .quote h4 {
-  color: #6f6f6f;
-  font-weight: bold;
-  font-size: 1.2em; }
-  .quote-bubbles .quote h4 em {
-    display: block;
-    font-weight: normal;
-    font-style: italic;
-    font-size: 0.8em; }
+.quote-bubbles .quote {
+  margin-bottom: 30px; }
+  .quote-bubbles .quote .bubble {
+    background: url(../quote-nipple.png) no-repeat bottom left;
+    padding-bottom: 10px; }
+  .quote-bubbles .quote .inner {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1em; }
+  .quote-bubbles .quote a h4 {
+    text-decoration: underline; }
+  .quote-bubbles .quote h4 {
+    color: #6f6f6f;
+    font-weight: bold;
+    font-size: 1.2em; }
+    .quote-bubbles .quote h4 em {
+      display: block;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 0.8em; }
+
+#recruiters .quote h4 {
+  margin-top: 0.7em; }
 
 .s2 h3 {
   text-transform: uppercase;
