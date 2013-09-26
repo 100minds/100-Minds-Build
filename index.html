@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+<link rel='stylesheet' href='assets/css/normalize.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+<link rel='stylesheet' href='assets/css/jquery.simplyscroll.css'>
+<script src='assets/js/jquery-1.8.3.min.js'></script>
+<script src='assets/js/app.js'></script>
+<script src='assets/js/simplyscroll.js'></script>
+
+<link href="assets/favicon.ico" rel="shortcut icon">
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+<title>100 Minds</title>
+
+    <script src='assets/js/jquerytypewriter.js'></script>
+<script>
+  $(document).ready(function() {	
+  
+  	$('.fs1').delay(1000).fadeIn( 1000, function() {
+  		$('.fs2').typewrite({"delay":30 , "pause": 0, "callback" : function() {
+  			$('.fs3').typewrite({"delay":30, "pause":500, "callback" : function() {
+  				$(".fs4").typewrite({"delay":30, "pause": 700, "callback" : function() {
+  					$(".fs1").slideUp()
+  					$(".fs5").show().animate({fontSize : '250px' }, 400, function() {
+  						setTimeout(function() {
+  							$(".fs6").typewrite({"delay":30, "pause": 500, "callback" : function() {
+  								$(".fs2, .fs3").slideUp();
+  								$(".fs7").typewrite({"delay":30, "pause": 500, "callback" : function() {
+  									$(".fs4, .fs5").slideUp()
+  									$(".fs8").show().animate({fontSize: '225px'},400, function() {
+  										setTimeout(function() {
+  											$(".fs6").slideUp()
+  											$(".fs9").typewrite({"delay":30, "callback": function() {
+  												$(".fs10").typewrite({"delay":30, "callback" : function() {
+  													$("#arrow-down").fadeIn()
+  												}})
+  											}})
+  										}, 500)
+  									})
+  								}})
+  							}})
+  						}, 100)
+  					})
+  				}})
+  			}})
+  		}})
+  	})
+  
+  	$("#arrow-down").click(function() {
+  
+  	   var top = $('#main').position().top;
+  	   $('body').animate({scrollTop: top-100}, 800);
+  
+  	})
+  
+  	$("#footer").css({bottom: '-70px'})
+  
+  	$(window).scroll(function() {
+  		if ($(this).scrollTop() > 100) {
+  		    $('#footer').stop().animate({ bottom: '0px' });
+  		} else {
+  		    $('#footer').stop().animate({ bottom: '-70px' });
+  		}
+  	});
+  
+  })
+</script>
+
+  </head>
+  <body>
+    <div class='reveal-modal medium' id='video'>
+  <a class="close-reveal-modal">&#215;</a>
+  <h3>About 100 Minds</h3>
+  <div class='flex-video'>
+    <iframe width="100%" height="300" src="//www.youtube.com/embed/tTy6TnQRSQY?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<div class='reveal-modal medium' id='get-involved'>
+  <a class="close-reveal-modal">&#215;</a>
+  <h3>Apply</h3>
+  <form accept-charset='utf-8' action='http://submit.jotform.co/submit/32680681300852/' class='custom forms1' id='32680681300852' method='post' name='form_32680681300852'>
+  <input type="hidden" name="formID" value="32680681300852" />
+  <div class='row'>
+    <label for='first_name'>Your Name</label>
+  </div>
+  <div class='row'>
+    <div class='large-6 columns nopl'>
+      <input class='noml' id='first_name' name='q1_yourName[first]' placeholder='First Name' type='text'>
+    </div>
+    <div class='large-6 columns nopl'>
+      <input class='noml' name='q1_yourName[last]' placeholder='Last Name' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='phone_number'>Phone Number</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <input class='noml' id='phone_number' name='q8_phone' placeholder='Phone Number' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='email'>Email Address</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <input class='noml' id='email' name='q3_email3' placeholder='Email Address' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='college'>College</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <input class='noml' id='college' name='q5_college' placeholder='College' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='degree'>College Course</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <input class='noml' id='degree' name='q6_degree' placeholder='College Degree' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='whatmakes'>What makes you suitable for 100 Minds? (200 words max)</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <textarea class='noml' id='whatmakes' name='q7_whatMakes' placeholder='What makes you suitable?'></textarea>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-4 columns large-centered'>
+      <input class='round expand button nomb fwb mt20' type='submit'>
+    </div>
+  </div>
+</form>
+
+</div>
+
+    <a href='#main' id='arrow-down'>
+  <div id='header'>
+    <div class='row'>
+      <div class='large-3 small-12 columns'>
+        <a href='/' id='logo'></a>
+      </div>
+      <div class='large-9 small-6 columns'>
+        <ul class='inline-list' id='top-menu'>
+          <li>
+            <a data-reveal-id='get-involved' href='#' id='watch-video'>Get Involved</a>
+          </li>
+          <li>
+            <a data-reveal-id='video' href='#' id='get-involved'>Watch Video</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</a>
+
+    <div class='vcenter1'>
+  <div class='vcenter2'>
+    <div class='vcenter3'>
+      <div class='row'>
+        <div id='message'>
+          <div class='fs1 fwb'>100</div>
+          <div class='fs2'>OF IRELAND'S TOP</div>
+          <div class='fs3 fwb'>UNIVERSITY GRADS</div>
+          <div class='fs4'>EACH ASKED TO RAISE</div>
+          <div class='fs5 fwb'>€1000</div>
+          <div class='fs6'>BY WHATEVER MEANS NECESSARY</div>
+          <div class='fs7 fwb'>TO COLLECTIVELY CONTRIBUTE</div>
+          <div class='fs8 fwb'>€100000</div>
+          <div class='fs9'>TO PARENTS & FAMILIES OF SICK CHILDREN</div>
+          <div class='fs9 fwb'>IN TEMPLE STREET CHILDREN'S HOSPITAL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class='bg1 ptb30 s2' id='main'>
+  <div class='row'>
+    <div class='large-4 small-12 columns'>
+      <div class='pz10'>
+        <h3>Impact</h3>
+        <p>Be part of a project setting out to improve the lives of over 130,000 sick Irish children that pass through Temple Street Hospital each year. Our mission is to improve hospital infrastructure, enhance patient quality of life and support families in need.</p>
+        <a class='more' href='about-the-cause'>About The Cause &raquo;</a>
+      </div>
+    </div>
+    <div class='large-4 small-12 columns'>
+      <div class='pz10'>
+        <h3>Inspire</h3>
+        <p>By thinking critically about the challenge ahead, putting a strategy in place and working as a team we can prove that even some of the biggest challenges faced can be conquered. With your 100minds profile you’re given a voice - use it to tell your fundraising story and lead by example to move others to action. Link to profile page.</p>
+      </div>
+    </div>
+    <div class='large-4 small-12 columns'>
+      <div class='pz10'>
+        <h3>Educate</h3>
+        <p>Manage your fundraising through 4 key stages - Brainstorming, Planning, Implementing, Measuring and gain real experience with project management. Some of Irelands biggest graduate companies agree that 100minds is an opportunity to refine your skill set, demonstrate leadership and stand out from the crowd.</p>
+        <a class='more' href='about-the-cause'>What Recruiters Say &raquo;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class='bg2 ptb30'>
+  <div class='row quote-bubbles'>
+    <div class='large-6 columns'>
+      <div class='quote'>
+        <div class='bubble'>
+          <div class='inner'>
+            100minds is a fantastic opportunity to build your professional brand, collaborate with like-minded people, and ultimately to highlight your leadership, entrepreneurial and creative skills to employers. 100minds allows students to achieve all of this while consequently delivering an amazing result for the chosen charity.
+          </div>
+        </div>
+        <div class='row pt'>
+          <div class='large-2 columns'>
+            <center>
+              <img src='assets/faces/lb-linkedin.png'>
+            </center>
+          </div>
+          <div class='large-10 columns nopl'>
+            <h4>
+              Lindsay Browning
+              <em>Talent Acquisition Manager, LinkedIn</em>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='large-6 columns'>
+      <div class='quote'>
+        <div class='bubble'>
+          <div class='inner'>
+            Students that partake in the 100minds initiative are showing that they can bring something additional to us. To achieve the 100minds challenge, you will need strong communication skills, planning & organisation skills and commitment to task – all skills that KPMG value when we look for potential employees.
+          </div>
+        </div>
+        <div class='row pt'>
+          <div class='large-2 columns'>
+            <center>
+              <img src='assets/faces/pv-kpmg.png'>
+            </center>
+          </div>
+          <div class='large-10 columns nopl'>
+            <h4>
+              Paul Vance
+              <em>HR Director, KPMG</em>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class='bg1 ptb30 s3 pb90'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3 class='uc'>Supported By</h3>
+      <ul class='outline' id='partners'>
+        <li>
+          <img src='assets/tls.jpg'>
+        </li>
+        <li>
+          <img src='assets/stripe.jpg'>
+        </li>
+        <li>
+          <img src='assets/li.jpg'>
+        </li>
+        <li>
+          <img src='assets/kpmg.jpg'>
+        </li>
+        <li>
+          <img src='assets/pwc.jpg'>
+        </li>
+        <li>
+          <img src='assets/spunout.jpg'>
+        </li>
+        <li>
+          <img src='assets/sig.jpg'>
+        </li>
+        <li>
+          <img src='assets/ucd.jpg'>
+        </li>
+        <li>
+          <img src='assets/dit.jpg'>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div id='footer'>
+  <div class='row'>
+    <div class='large-7 large-centered columns'>
+      <ul class='s4'>
+        <li class='current'>
+          <a class='current active' href='index.html'>Home</a>
+        </li>
+        <li>
+          <a href='temple-street.html'>About The Cause</a>
+        </li>
+        <li>
+          <a href='recruiters.html'>What Recruiters Say</a>
+        </li>
+        <!-- %li -->
+        <!-- %a{:href=>"about-us.haml.html"} About Us -->
+        <li>
+          <a data-reveal-id='get-involved' href='#'>Get Involved</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <script type="text/javascript" src="/assets/js/foundation/foundation.js"></script>
+<script type="text/javascript" src="/assets/js/foundation/foundation.reveal.js"></script>
+<script type="text/javascript" src="/assets/js/foundation/foundation.forms.js"></script>
+<script type="text/javascript" src="/assets/js/foundation/foundation.section.js"></script>
+<script type="text/javascript" src="/assets/js/foundation/foundation.placeholder.js"></script>
+<script>
+  $(document).foundation('topbar reveal forms section', {back_text: 'Back to Menu'} );
+  $('input, textarea').placeholder();
+</script>
+
+  </body>
+</html>
