@@ -34,12 +34,18 @@
 <script src='assets/js/jquery-1.8.3.min.js'></script>
 <script src='assets/js/app.js'></script>
 <script src='assets/js/simplyscroll.js'></script>
+<script src='assets/jquery.validate.js'></script>
 
 <link href="assets/favicon.ico" rel="shortcut icon">
 <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
 
 <title>100 Minds</title>
 
+<meta property="og:title" content="100minds" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="100 of Ireland's top university students each asked to raise €1,000 by whatever means possible to collectively contribute €100,000 to parents & familes of sick children in Temple Street Children's Hospital" />
+<meta property="og:url" content="http://100minds.org"/>
+<meta property="og:image" content="http://100minds.org/assets/logo.png"/>
   </head>
   <body>
     <div class='reveal-modal medium' id='video'>
@@ -59,10 +65,10 @@
   </div>
   <div class='row'>
     <div class='large-6 columns nopl'>
-      <input class='noml' id='first_name' name='q1_yourName[first]' placeholder='First Name' type='text'>
+      <input class='noml' id='first_name' name='q1_yourName[first]' placeholder='First Name' required='' type='text'>
     </div>
     <div class='large-6 columns nopl'>
-      <input class='noml' name='q1_yourName[last]' placeholder='Last Name' type='text'>
+      <input class='noml' name='q1_yourName[last]' placeholder='Last Name' required='' type='text'>
     </div>
   </div>
   <div class='row'>
@@ -70,7 +76,7 @@
   </div>
   <div class='row'>
     <div class='large-12 columns nopl'>
-      <input class='noml' id='phone_number' name='q8_phone' placeholder='Phone Number' type='text'>
+      <input class='noml' id='phone_number' name='q8_phone' placeholder='Phone Number' required='' type='text'>
     </div>
   </div>
   <div class='row'>
@@ -78,7 +84,7 @@
   </div>
   <div class='row'>
     <div class='large-12 columns nopl'>
-      <input class='noml' id='email' name='q3_email3' placeholder='Email Address' type='text'>
+      <input class='noml' id='email' name='q3_email3' placeholder='Email Address' required='' type='email'>
     </div>
   </div>
   <div class='row'>
@@ -86,7 +92,7 @@
   </div>
   <div class='row'>
     <div class='large-12 columns nopl'>
-      <input class='noml' id='college' name='q5_college' placeholder='College' type='text'>
+      <input class='noml' id='college' name='q5_college' placeholder='College' required='' type='text'>
     </div>
   </div>
   <div class='row'>
@@ -94,7 +100,7 @@
   </div>
   <div class='row'>
     <div class='large-12 columns nopl'>
-      <input class='noml' id='degree' name='q6_degree' placeholder='College Degree' type='text'>
+      <input class='noml' id='degree' name='q6_degree' placeholder='College Degree' required='' type='text'>
     </div>
   </div>
   <div class='row'>
@@ -102,7 +108,7 @@
   </div>
   <div class='row'>
     <div class='large-12 columns nopl'>
-      <textarea class='noml' id='whatmakes' name='q7_whatMakes' placeholder='What makes you suitable?'></textarea>
+      <textarea class='noml' id='whatmakes' name='q7_whatMakes' placeholder='What makes you suitable?' required=''></textarea>
     </div>
   </div>
   <div class='row'>
@@ -111,6 +117,61 @@
     </div>
   </div>
 </form>
+<script>
+  $("#32680681300852").validate()
+</script>
+
+</div>
+<div class='reveal-modal medium' id='tell-a-friend'>
+  <a class="close-reveal-modal">&#215;</a>
+  <h3>Tell a friend about 100 Minds</h3>
+  <form accept-charset='utf-8' action='http://submit.jotform.co/submit/32695718650867/' class='custom forms1' id='32695718650867' method='post' name='form_32695718650867'>
+  <input type="hidden" name="formID" value="32695718650867" />
+  <div class='row'>
+    <label for='first_name'>Your Details</label>
+  </div>
+  <div class='row'>
+    <div class='large-4 columns nopl'>
+      <input class='noml' id='first_name' name='q1_yourName[first]' placeholder='First Name' required='' type='text'>
+    </div>
+    <div class='large-4 columns nopl'>
+      <input class='noml' name='q6_yourName[last]' placeholder='Last Name' required='' type='text'>
+    </div>
+    <div class='large-4 columns nopl'>
+      <input class='noml' name='q7_yourEmail' placeholder='Email address' required='' type='email'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='first_name'>Your Friend's Details</label>
+  </div>
+  <div class='row'>
+    <div class='large-4 columns nopl'>
+      <input class='noml' id='first_name' name='q3_friendsName[first]' placeholder='First Name' required='' type='text'>
+    </div>
+    <div class='large-4 columns nopl'>
+      <input class='noml' name='q3_friendsName[last]' placeholder='Last Name' required='' type='text'>
+    </div>
+    <div class='large-4 columns nopl'>
+      <input class='noml' name='q4_friendsEmail' placeholder='Email address' required='' type='email'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='whatmakes'>Message (Optional)</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <textarea class='noml' id='whatmakes' name='q5_message' placeholder='What makes you suitable?'></textarea>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-4 columns large-centered'>
+      <input class='round expand button nomb fwb mt20' type='submit'>
+    </div>
+  </div>
+</form>
+<script>
+  $("#32695718650867").validate()
+</script>
 
 </div>
 
@@ -217,7 +278,7 @@
 
     <div id='footer'>
   <div class='row'>
-    <div class='large-7 large-centered columns'>
+    <div class='large-7 columns'>
       <ul class='s4'>
         <li>
           <a class='active' href='index.html'>Home</a>
@@ -234,6 +295,10 @@
           <a data-reveal-id='get-involved' href='#'>Get Involved</a>
         </li>
       </ul>
+    </div>
+    <div class='large-3 columns'>
+      <div class="fb-like" data-href="https://www.facebook.com/100Minds" data-layout="button_count" data-width="90" data-show-faces="false" data-send="false"></div>
+      <a href="https://twitter.com/100_minds" class="twitter-follow-button" data-show-count="false">Follow @100_minds</a>
     </div>
   </div>
 </div>

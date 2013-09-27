@@ -2432,7 +2432,8 @@ html, body, .h100 {
   left: 0;
   right: 0px;
   background: white;
-  z-index: 1; }
+  z-index: 1;
+  border-bottom: 3px solid #0ab3d2; }
   #header #logo {
     float: left;
     display: block;
@@ -2560,6 +2561,8 @@ input.button.smaller {
   #message div {
     display: none;
     text-shadow: -1px 1px 8px #00448b; }
+  #message div.show, #message div.show div {
+    display: block !important; }
   #message .fs1 {
     font-size: 250px;
     height: 220px;
@@ -2574,6 +2577,9 @@ input.button.smaller {
     font-size: 45px; }
   #message .fs9 {
     font-size: 45px; }
+  #message .fs11 {
+    font-size: 20px;
+    line-height: 24px; }
   #message .fs5, #message .fs8 {
     font-size: 0px; }
 
@@ -2684,3 +2690,5 @@ h3.uc {
   font-weight: bold;
   line-height: 2em;
   font-size: 1em; }
+.forms1 label.error {
+  line-height: 1.3em; }
