@@ -2698,7 +2698,7 @@ h3.uc {
 #footer {
   line-height: 70px;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   left: 0;
   right: 0;
   height: 70px;
@@ -2757,4 +2757,13 @@ h3.uc {
 
   .reveal-modal {
     margin-left: -50% !important;
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  #footer {
+    display: block !important;
+    position: relative !important; }
+    #footer li {
+      width: 100% !important; }
+
+  .quote-bubbles {
+    padding: 0 20px; } }
