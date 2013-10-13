@@ -2426,6 +2426,9 @@ html, body, .h100 {
   height: 120px;
   width: 100%; }
 
+.extended {
+  height: 180px; }
+
 #header {
   position: fixed;
   top: 0;
@@ -2440,31 +2443,31 @@ html, body, .h100 {
     width: 100%;
     height: 100px;
     background-image: url(../logo.png);
-    background-repeat: no-repeat; }
-  #header #top-menu {
+    background-repeat: no-repeat;
+    background-position: center; }
+  #header #top-menu .inner {
     padding: 40px 0;
     margin: 0; }
-    #header #top-menu li {
-      float: right; }
-      #header #top-menu li a {
-        color: white;
-        display: block;
-        background: red;
-        padding: 10px 25px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px; }
-        #header #top-menu li a#get-involved {
-          background: #a4c348; }
-          #header #top-menu li a#get-involved:hover {
-            background: #86a32e; }
-        #header #top-menu li a#watch-video {
-          background: #ea1d27; }
-          #header #top-menu li a#watch-video:hover {
-            background: #ca111a; }
-        #header #top-menu li a:hover {
-          text-decoration: none; }
+
+.action-buttons a {
+  color: white;
+  display: block;
+  background: red;
+  padding: 10px 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; }
+  .action-buttons a#get-involved {
+    background: #2c79b3; }
+    .action-buttons a#get-involved:hover {
+      background: #2c79b3; }
+  .action-buttons a#watch-video {
+    background: #a4c348; }
+    .action-buttons a#watch-video:hover {
+      background: #86a32e; }
+  .action-buttons a:hover {
+    text-decoration: none; }
 
 input.button.smaller {
   padding-top: 0.5em;
@@ -2585,13 +2588,17 @@ input.button.smaller {
   #message .fs2, #message .fs6, #message .fs9 {
     font-size: 42px; }
   #message .fs3 {
-    font-size: 38px; }
+    font-size: 38px;
+    line-height: 50px; }
   #message .fs4 {
-    font-size: 34px; }
+    font-size: 54px; }
   #message .fs7 {
     font-size: 45px; }
   #message .fs9 {
-    font-size: 45px; }
+    font-size: 62px; }
+  #message .fs10 {
+    font-size: 32px;
+    line-height: 50px; }
   #message .fs11 {
     font-size: 20px;
     line-height: 24px; }
@@ -2733,3 +2740,17 @@ h3.uc {
   display: inline;
   font-family: "Pictos Custom";
   text-transform: none; }
+
+@media only screen and (max-width: 60em) {
+  .vcenter1 {
+    display: none; }
+
+  .columns {
+    padding: 0px !important; }
+
+  #top-menu {
+    padding: 0px !important; }
+    #top-menu .inner {
+      padding: 0px !important; }
+    #top-menu a {
+      border-radius: 0px !important; } }
