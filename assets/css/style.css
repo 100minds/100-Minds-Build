@@ -2753,4 +2753,8 @@ h3.uc {
     #top-menu .inner {
       padding: 0px !important; }
     #top-menu a {
-      border-radius: 0px !important; } }
+      border-radius: 0px !important; }
+
+  .reveal-modal {
+    margin-left: -50% !important;
+    width: 100% !important; } }
