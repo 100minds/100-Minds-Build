@@ -2426,9 +2426,6 @@ html, body, .h100 {
   height: 120px;
   width: 100%; }
 
-.extended {
-  height: 180px; }
-
 #header {
   position: fixed;
   top: 0;
@@ -2742,6 +2739,9 @@ h3.uc {
   text-transform: none; }
 
 @media only screen and (max-width: 60em) {
+  .topseparator {
+    height: 180px !important; }
+
   .vcenter1 {
     display: none; }
 
