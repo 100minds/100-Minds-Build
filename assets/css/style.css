@@ -2739,8 +2739,14 @@ h3.uc {
   text-transform: none; }
 
 @media only screen and (max-width: 60em) {
+  .bg2 {
+    padding: 10px 30px; }
+
   .topseparator {
-    height: 180px !important; }
+    height: 0px !important; }
+
+  #header {
+    position: relative !important; }
 
   .vcenter1 {
     display: none; }
