@@ -17,6 +17,7 @@
 </script>
 
 
+
 <link rel='stylesheet' href='assets/css/normalize.css'>
 <link rel='stylesheet' href='assets/css/style.css'>
 <link rel='stylesheet' href='assets/css/jquery.simplyscroll.css'>
@@ -37,6 +38,26 @@
 <meta property="og:image" content="http://100minds.org/assets/fbimage.png"/>
 <meta property="fb:app_id" content="629295570449148"/>
 <meta property="fb:admins" content="799990640"/>
+
+<script type="text/javascript">
+
+	function showdiv(div) {
+		div = $("#"+div)
+		div.show();
+	}
+
+	function hidediv(div) {
+		div = $("#"+div)
+		div.hide();
+	}
+
+	function focusInput(input) {
+		input = $("#"+input)
+		input.focus()
+	}
+
+</script>
+
 
 
 
@@ -155,6 +176,65 @@ fjs.parentNode.insertBefore(js, fjs);
 </script>
 
 </div>
+<div class='reveal-modal medium' id='apply-form'>
+  <a class="close-reveal-modal">&#215;</a>
+  <h3>Apply Now</h3>
+  <form accept-charset='utf-8' action='http://submit.jotform.co/submit/32680681300852/' class='custom forms1' id='32680681300852' method='post' name='form_32680681300852'>
+  <input type="hidden" name="formID" value="32680681300852" />
+  <div class='row'>
+    <label for='first_name'>Your Name</label>
+  </div>
+  <div class='row'>
+    <div class='large-6 columns nopl'>
+      <input class='noml' id='first_name' name='q1_yourName[first]' placeholder='First Name' required='' type='text'>
+    </div>
+    <div class='large-6 columns nopl'>
+      <input class='noml' name='q1_yourName[last]' placeholder='Last Name' required='' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='email'>Email Address</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <input class='noml' id='email' name='q3_email3' placeholder='Email Address' required='' type='email'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='college'>College</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <input class='noml' id='college' name='q5_college' placeholder='College' required='' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='degree'>College Course</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <input class='noml' id='degree' name='q6_degree' placeholder='College Degree' required='' type='text'>
+    </div>
+  </div>
+  <div class='row'>
+    <label for='whatmakes'>What makes you suitable for 100minds? (200 words max)</label>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns nopl'>
+      <textarea class='noml' id='whatmakes' name='q7_whatMakes' placeholder='What makes you suitable?' required=''></textarea>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-4 columns large-centered'>
+      <input class='round expand button nomb fwb mt20' type='submit'>
+    </div>
+  </div>
+</form>
+<script>
+  $("#32680681300852").validate()
+</script>
+
+</div>
 
     <a href='#main' id='arrow-down'>
   <div id='header'>
@@ -172,14 +252,20 @@ fjs.parentNode.insertBefore(js, fjs);
           <div class='large-1 columns'>
             &nbsp;
           </div>
-          <div class='large-4 columns nopl'>
-            <a data-reveal-id='video' href='#' id='get-involved'>Watch Video</a>
+          <div class='large-6 columns nopl'>
+            <a class='greybg' href='our-impact.html'>We Raised €138,000!</a>
           </div>
-          <div class='large-4 columns nopl nopr'>
-            <a href='https://people.100minds.org' id='watch-video'>Fundraising Hub</a>
-          </div>
-          <div class='large-3 columns nopr'>
-            <a href='https://people.100minds.org/people/sign_in' style='background: #eee;color: dimgrey' target='_blank'>Sign In</a>
+          <div class='large-5 columns nopl nopr'>
+            <a class='greenbg' href='#' id='register-interest-button' onclick="showdiv('register-interest');hidediv('register-interest-button');focusInput('register-interest-input')">Get Involved for 2014</a>
+<div class='row collapse rounded-input dn' id='register-interest'>
+  <div class='large-9 columns'>
+    <input id='register-interest-input' placeholder='Enter Your Email' type='text'>
+  </div>
+  <div class='large-3 columns'>
+    <input class='button input-height' type='submit' value='Go'>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
@@ -231,6 +317,59 @@ fjs.parentNode.insertBefore(js, fjs);
           </div>
         </div>
       </div>
+      <div class='row'>
+        <div class='large-12 columns'>
+          <div class='bg2 ptb30'>
+  <div class='row quote-bubbles'>
+    <div class='large-6 columns'>
+      <div class='quote'>
+        <div class='bubble'>
+          <div class='inner'>
+            100minds is a fantastic opportunity to build your professional brand, collaborate with like-minded people, and ultimately to highlight your leadership, entrepreneurial and creative skills to employers. 100minds allows students to achieve all of this while consequently delivering an amazing result for the chosen charity.
+          </div>
+        </div>
+        <div class='row pt'>
+          <div class='large-2 small-2 columns'>
+            <center>
+              <img src='assets/faces/lb-linkedin.png'>
+            </center>
+          </div>
+          <div class='large-10 small-10 columns nopl'>
+            <h4>
+              Lindsay Browning
+              <em>Talent Acquisition Manager, LinkedIn</em>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='large-6 columns'>
+      <div class='quote'>
+        <div class='bubble'>
+          <div class='inner'>
+            Students that partake in the 100minds initiative are showing that they can bring something additional to us. To achieve the 100minds challenge, you will need strong communication skills, planning & organisation skills and commitment to task – all skills that KPMG value when we look for potential employees.
+          </div>
+        </div>
+        <div class='row pt'>
+          <div class='large-2 small-2 columns'>
+            <center>
+              <img src='assets/faces/pv-kpmg.png'>
+            </center>
+          </div>
+          <div class='large-10 small-10 columns nopl'>
+            <h4>
+              Paul Vance
+              <em>HR Director, KPMG</em>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
     </div>
     <div class='bg1 ptb30 s3 pb90'>
   <div class='row'>
@@ -279,14 +418,17 @@ fjs.parentNode.insertBefore(js, fjs);
         <li>
           <a class='active' href='index.html'>Home</a>
         </li>
-        <li class='current'>
-          <a class='current' href='temple-street.html'>About The Cause</a>
+        <li>
+          <a href='our-impact.html'>Our Impact</a>
         </li>
         <li>
           <a href='recruiters.html'>What People Say</a>
         </li>
         <li>
           <a href='about-us.html'>About Us</a>
+        </li>
+        <li>
+          <a href='http://blog.100minds.org' target='_blank'>Blog</a>
         </li>
         <li>
           <a data-reveal-id='contact-us' href='#'>Contact Us</a>

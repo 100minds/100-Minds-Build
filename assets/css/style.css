@@ -2446,10 +2446,27 @@ html, body, .h100 {
     padding: 40px 0;
     margin: 0; }
 
+.dn {
+  display: none; }
+
+.rounded-input input[type='text'] {
+  padding-left: 0.8em !important;
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important; }
+.rounded-input input[type='submit'] {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important; }
+
+.input-height {
+  padding: 0.6em 1em !important; }
+
 .action-buttons a {
   color: white;
   display: block;
-  background: red;
   padding: 10px 20px;
   text-align: center;
   border-top-left-radius: 25px;
@@ -2466,6 +2483,14 @@ html, body, .h100 {
       background: #86a32e; }
   .action-buttons a:hover {
     text-decoration: none; }
+.action-buttons a.greybg {
+  background: #f0f0f0;
+  color: #949494; }
+  .action-buttons a.greybg:hover {
+    background: #2c79b3;
+    color: white; }
+.action-buttons a.greenbg {
+  background: #8bab32; }
 
 input.button.smaller {
   padding-top: 0.5em;
@@ -2579,12 +2604,15 @@ input.button.smaller {
     text-shadow: -1px 1px 8px #00448b; }
   #message div.show, #message div.show div {
     display: block !important; }
+  #message .fs0 {
+    display: block;
+    font-size: 100px; }
   #message .fs1 {
     font-size: 250px;
     height: 220px;
     width: 100%; }
   #message .fs2, #message .fs6, #message .fs9 {
-    font-size: 42px; }
+    font-size: 42px !important; }
   #message .fs3 {
     font-size: 38px;
     line-height: 50px; }
@@ -2703,6 +2731,9 @@ h3.uc {
   bottom: 0px;
   background: #20a0d5; }
 
+.pb30 {
+  padding-bottom: 30px; }
+
 .pb90 {
   padding-bottom: 90px; }
 
@@ -2727,6 +2758,9 @@ h3.uc {
   font-size: 1em; }
 .forms1 label.error {
   line-height: 1.3em; }
+
+.br80 {
+  border-radius: 80px; }
 
 .br10 {
   border-radius: 10px; }
