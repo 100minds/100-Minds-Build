@@ -2358,6 +2358,9 @@ form.custom {
 .close-reveal-modal:hover {
   background-position: center -20px; }
 
+.center-text {
+  text-align: center; }
+
 .nice-button {
   color: white;
   display: block;
@@ -2423,7 +2426,7 @@ html, body, .h100 {
   padding: 0 10px; }
 
 .topseparator {
-  height: 120px;
+  height: 115px;
   width: 100%; }
 
 #header {
@@ -2512,6 +2515,14 @@ input.button.smaller {
   max-width: 1200px;
   padding: 30px 3%; }
 
+h2 {
+  font-size: 2.2em; }
+
+.bb {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em; }
+
 .lh1 {
   line-height: 1em; }
 
@@ -2570,6 +2581,9 @@ input.button.smaller {
 
 .ptb30 {
   padding: 30px 0; }
+
+.ptb20 {
+  padding: 20px 0; }
 
 .bottom p {
   color: white; }
