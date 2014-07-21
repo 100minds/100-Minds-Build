@@ -16,8 +16,6 @@
   })();
 </script>
 
-
-
 <link rel='stylesheet' href='assets/css/normalize.css'>
 <link rel='stylesheet' href='assets/css/style.css'>
 <link rel='stylesheet' href='assets/css/jquery.simplyscroll.css'>
@@ -41,18 +39,18 @@
 
 <script type="text/javascript">
 
-	function showdiv(div) {
-		div = $("#"+div)
+	function showdiv(link,div) {
+		div = $(link).next($("."+div))
 		div.show();
 	}
 
 	function hidediv(div) {
-		div = $("#"+div)
+		div = $(div)
 		div.hide();
 	}
 
-	function focusInput(input) {
-		input = $("#"+input)
+	function focusInput(link,input) {
+		input = $(link).parent().find($("."+input))
 		input.focus()
 	}
 
@@ -256,15 +254,18 @@ fjs.parentNode.insertBefore(js, fjs);
             <a class='greybg' href='our-impact.html'>We Raised €138,000!</a>
           </div>
           <div class='large-5 columns nopl nopr'>
-            <a class='greenbg' href='#' id='register-interest-button' onclick="showdiv('register-interest');hidediv('register-interest-button');focusInput('register-interest-input')">Get Involved for 2014</a>
-<div class='row collapse rounded-input dn' id='register-interest'>
-  <div class='large-9 columns'>
-    <input id='register-interest-input' placeholder='Enter Your Email' type='text'>
+            <form action='http://submit.jotformpro.com/submit/42012904492953/' method='post'>
+  <input name='formID' type='hidden' value='42012904492953'>
+  <a class='greenbg' href='#' id='register-interest-button' onclick="showdiv(this,'register-interest');hidediv(this);focusInput(this,'register-interest-input');return false">Get Involved for 2014</a>
+  <div class='row collapse rounded-input register-interest dn'>
+    <div class='large-9 columns'>
+      <input class='register-interest-input' name='q1_email1' placeholder='Enter Your Email' type='text'>
+    </div>
+    <div class='large-3 columns'>
+      <input class='button input-height' type='submit' value='Go'>
+    </div>
   </div>
-  <div class='large-3 columns'>
-    <input class='button input-height' type='submit' value='Go'>
-  </div>
-</div>
+</form>
 
           </div>
         </div>
