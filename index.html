@@ -63,44 +63,12 @@
 <script>
   $(document).ready(function() {	
   
-  	$('.fs1').delay(1000).fadeIn( 1000, function() {
-  		$('.fs2').typewrite({"delay":30 , "pause": 0, "callback" : function() {
-  			$('.fs3').typewrite({"delay":30, "pause":500, "callback" : function() {
-  				$(".fs4").typewrite({"delay":30, "pause": 700, "callback" : function() {
-  					$(".fs1").slideUp()
-  					$(".fs5").show().animate({fontSize : '250px' }, 400, function() {
-  						setTimeout(function() {
-  							$(".fs6").typewrite({"delay":30, "pause": 500, "callback" : function() {
-  								$(".fs2, .fs3").slideUp();
-  								$(".fs7").typewrite({"delay":30, "pause": 500, "callback" : function() {
-  									$(".fs4, .fs5").slideUp()
-  									$(".fs8").show().animate({fontSize: '225px'},400, function() {
-  										setTimeout(function() {
-  											$(".fs6").slideUp()
-  											$(".fs9").typewrite({"delay":30, "callback": function() {
-  												$(".fs10").typewrite({"delay":30, "callback" : function() {
-  													$("#arrow-down").fadeIn()
-  												}})
-  											}})
-  										}, 500)
-  									})
-  								}})
-  							}})
-  						}, 100)
-  					})
-  				}})
-  			}})
-  		}})
-  	})
-  
   	$("#arrow-down").click(function() {
   
   	   var top = $('#main').position().top;
   	   $('body').animate({scrollTop: top-100}, 800);
   
   	})
-  
-  
   
   	$("#footer").css({bottom: '-70px'})
   
@@ -112,6 +80,15 @@
   		}
   	});
   
+  })
+</script>
+
+    <script>
+  	
+  $(document).ready(function() {	
+  	$('#message2').delay(1000).fadeIn(1500,function() {
+  		$("#arrow-down").fadeIn()										
+  	})
   })
 </script>
 
@@ -290,27 +267,27 @@ fjs.parentNode.insertBefore(js, fjs);
 
 </div>
 
-    <a href='#main' id='arrow-down'>
-  <div id='header'>
-    <div class='row'>
-      <div class='large-3 small-12 columns'>
-        <center>
-          <a href='/' id='logo'></a>
-        </center>
-      </div>
-      <div class='large-3 small-12 columns'>
-        &nbsp;
-      </div>
-      <div class='large-6 columns' id='top-menu'>
-        <div class='row inner action-buttons'>
-          <div class='large-1 columns'>
-            &nbsp;
-          </div>
-          <div class='large-6 columns nopl'>
-            <a class='greybg' href='our-impact.html'>We Raised €138,000!</a>
-          </div>
-          <div class='large-5 columns nopl nopr'>
-            <form action='http://submit.jotformpro.com/submit/42012904492953/' method='post'>
+    <a href='#main' id='arrow-down'></a>
+<div id='header'>
+  <div class='row'>
+    <div class='large-3 small-12 columns'>
+      <center>
+        <a href='/' id='logo'></a>
+      </center>
+    </div>
+    <div class='large-3 small-12 columns'>
+      &nbsp;
+    </div>
+    <div class='large-6 columns' id='top-menu'>
+      <div class='row inner action-buttons'>
+        <div class='large-1 columns'>
+          &nbsp;
+        </div>
+        <div class='large-6 columns nopl'>
+          <a class='greybg' href='our-impact.html'>We Raised €138,000!</a>
+        </div>
+        <div class='large-5 columns nopl nopr'>
+          <form action='http://submit.jotformpro.com/submit/42012904492953/' method='post'>
   <input name='formID' type='hidden' value='42012904492953'>
   <a class='greenbg' href='#' id='register-interest-button' onclick="showdiv(this,'register-interest');hidediv(this);focusInput(this,'register-interest-input');return false">Get Involved for 2014</a>
   <div class='row collapse rounded-input register-interest dn'>
@@ -323,29 +300,22 @@ fjs.parentNode.insertBefore(js, fjs);
   </div>
 </form>
 
-          </div>
         </div>
       </div>
     </div>
   </div>
-</a>
+</div>
 
     <div class='topseparator hide-for-medium-up'></div>
     <div class='vcenter1'>
   <div class='vcenter2'>
     <div class='vcenter3'>
       <div class='row'>
-        <div class='show-for-medium-up' id='message'>
-          <div class='fs1 fwb'>150</div>
-          <div class='fs2'>OF IRELAND'S TOP</div>
-          <div class='fs3 fwb'>COLLEGE STUDENTS</div>
-          <div class='fs4'>EACH RAISING</div>
-          <div class='fs5 fwb'>€1000</div>
-          <div class='fs6'>BY WHATEVER MEANS NECESSARY</div>
-          <div class='fs7 fwb'>TO COLLECTIVELY CONTRIBUTE</div>
-          <div class='fs8 fwb'>€150000</div>
-          <div class='fs9 fwb'>TO HELP UNDERPRIVELEGED CHILDREN</div>
-          <div class='fs10 fwb'>AT BARNARDOS & BLOSSOM</div>
+        <div id='message2'>
+          <div class='fs7 fwb'>100minds Collectively Raises</div>
+          <div class='fs12 fwb'>€138000</div>
+          <div class='fs9 fwb'>TO HELP THE CHILDREN & FAMILIES</div>
+          <div class='fs10 fwb'>IN TEMPLE STREET CHILDREN'S HOSPITAL</div>
         </div>
         <div class='small-8 hide-for-medium-up' id='mobile-intro'>
           <div class='row action-buttons'>
@@ -478,7 +448,7 @@ fjs.parentNode.insertBefore(js, fjs);
 
     <div id='footer'>
   <div class='row'>
-    <div class='large-7 columns nopl nopr'>
+    <div class='large-9 columns nopl nopr'>
       <ul class='s4'>
         <li class='current'>
           <a class='current active' href='index.html'>Home</a>
@@ -501,8 +471,14 @@ fjs.parentNode.insertBefore(js, fjs);
       </ul>
     </div>
     <div class='large-3 columns nopl nopr'>
-      <div class="fb-like" data-href="https://www.facebook.com/100Minds" data-layout="button_count" data-width="90" data-show-faces="false" data-send="false"></div>
-      <a href="https://twitter.com/100_minds" class="twitter-follow-button" data-show-count="false">Follow @100_minds</a>
+      <div class='row'>
+        <div class='large-5 columns nopad' style='line-height:45px'>
+          <div class="fb-like" data-href="https://www.facebook.com/100Minds" data-layout="button_count" data-width="120" data-show-faces="false" data-send="false"></div>
+        </div>
+        <div class='large-7 columns' style='line-height:80px'>
+          <a href="https://twitter.com/100minds" class="twitter-follow-button" data-show-count="false">Follow @100minds</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
