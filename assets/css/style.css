@@ -2609,41 +2609,60 @@ h2 {
 .fwb {
   font-weight: bold; }
 
-#message {
+#message, #message2 {
   padding-top: 40px;
   text-align: center;
   color: white; }
-  #message div {
+  #message div, #message2 div {
     display: none;
     text-shadow: -1px 1px 8px #00448b; }
-  #message div.show, #message div.show div {
+  #message div.show, #message div.show div, #message2 div.show, #message2 div.show div {
     display: block !important; }
-  #message .fs0 {
-    display: block;
-    font-size: 100px; }
-  #message .fs1 {
-    font-size: 250px;
-    height: 220px;
-    width: 100%; }
-  #message .fs2, #message .fs6, #message .fs9 {
-    font-size: 42px !important; }
-  #message .fs3 {
-    font-size: 38px;
-    line-height: 50px; }
-  #message .fs4 {
-    font-size: 54px; }
-  #message .fs7 {
-    font-size: 45px; }
-  #message .fs9 {
-    font-size: 62px; }
-  #message .fs10 {
-    font-size: 32px;
-    line-height: 50px; }
-  #message .fs11 {
-    font-size: 20px;
-    line-height: 24px; }
-  #message .fs5, #message .fs8 {
-    font-size: 0px; }
+
+#message2 {
+  display: none; }
+  #message2 div {
+    display: block; }
+
+.fs0 {
+  display: block;
+  font-size: 100px; }
+
+.fs1 {
+  font-size: 250px;
+  height: 220px;
+  width: 100%; }
+
+.fs2, .fs6, .fs9 {
+  font-size: 42px !important; }
+
+.fs3 {
+  font-size: 38px;
+  line-height: 50px; }
+
+.fs4 {
+  font-size: 54px; }
+
+.fs7 {
+  font-size: 45px; }
+
+.fs9 {
+  font-size: 62px; }
+
+.fs10 {
+  font-size: 32px;
+  line-height: 50px; }
+
+.fs11 {
+  font-size: 20px;
+  line-height: 24px; }
+
+.fs12 {
+  font-size: 200px;
+  line-height: 240px; }
+
+.fs5, .fs8 {
+  font-size: 0px; }
 
 .fs14 {
   font-size: 1.4em; }
